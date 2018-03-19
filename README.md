@@ -1,6 +1,24 @@
 [![Build
 status](https://travis-ci.org/inconshreveable/ngrok.svg)](https://travis-ci.org/inconshreveable/ngrok)
 
+# 使用说明：
+1. 项目本身clone自[ngrok官方github](https://github.com/inconshreveable/ngrok)
+2. 项目已经包括官方的程序以及相应的依赖，使用的时候直接指定编译的环境变量就可快速编译，不需要下载依赖包
+
+# 使用：
+```bash
+# 如果是64位linux系统，执行下面这一行
+GOOS=linux GOARCH=amd64
+# mac 则执行下面，以此类推，替换就行
+GOOS=darwin GOARCH=amd64
+
+# 执行make，得到服务端可客户端程序
+make release-server release-client
+```
+
+# 教程：
+  - [利用ngrok实现内网穿透](http://qjm253.top/2018/03/19/ngrok_01/)
+
 # ngrok - Introspected tunnels to localhost ([homepage](https://ngrok.com))
 ### ”I want to expose a local server behind a NAT or firewall to the internet.”
 ![](https://ngrok.com/static/img/overview.png)
