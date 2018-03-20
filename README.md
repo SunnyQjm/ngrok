@@ -6,6 +6,7 @@ status](https://travis-ci.org/inconshreveable/ngrok.svg)](https://travis-ci.org/
 2. 项目已经包括官方的程序以及相应的依赖，使用的时候直接指定编译的环境变量就可快速编译，不需要下载依赖包
 
 # 使用：
+> 注意，在编译之前，需要生成自己域名对应的证书，生成方式在下面的教程里
 ```bash
 # 如果是64位linux系统，执行下面这一行
 GOOS=linux GOARCH=amd64
